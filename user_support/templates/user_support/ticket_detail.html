@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket {{ ticket.ticket_number }}</title>
+</head>
+<body>
+    <h1>Ticket Details</h1>
+    <p><strong>Ticket Number:</strong> {{ ticket.ticket_number }}</p>
+    <p><strong>Name:</strong> {{ ticket.name }}</p>
+    <p><strong>Unit:</strong> {{ ticket.unit }}</p>
+    <p><strong>Email:</strong> {{ ticket.email }}</p>
+    <p><strong>Contact:</strong> {{ ticket.contact }}</p>
+    <p><strong>Category:</strong> {{ ticket.category }}</p>
+    <p><strong>Description:</strong> {{ ticket.description }}</p>
+    <p><strong>Priority:</strong> {{ ticket.priority }}</p>
+    <p><strong>Status:</strong> {{ ticket.status }}</p>
+    <p><strong>Processed by:</strong> {{ ticket.process }}</p>
+    <p><strong>Created At:</strong> {{ ticket.created_at }}</p>
+
+    <a href="{% url 'support_index' %}">← Back to list</a>
+</body>
+</html>
